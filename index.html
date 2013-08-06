@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=360px, initial-scale=1,user-scalable=no">
+    <title>jStat Demo :a JavaScript statistical library</title>
+    <link href='http://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/standard.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/sh_style.css" />
+    <script type="text/javascript" src="js/sh_main.js"></script>
+    <script type="text/javascript" src="js/sh_javascript.js"></script>
+    <script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flot.min.js"></script>
+    <script type="text/javascript" src="js/jstat-1.0.0.min.js"></script>
+    <script type="text/javascript" src="js/myfunc.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <h1>jStat.js Demo</h1>
+      <button class="demo" onclick="demo1();">①正規分布の95パーセンタイル点を求める。</button>
+      <button class="demo" onclick="demo2();">②ベータ分布の累積密度を調べる。</button>
+      <button class="demo" onclick="demo3();">③正規分布の累積分布関数を作図する。</button><br>
+      <button class="demo" onclick="demo4();">④とりあえず作図する。</button><br>
+      <textarea id="edit"></textarea>
+      <button onclick="start();">実行する</button><button onclick="document.getElementById('edit').innerHTML='';">Clear</button>
+      <pre id="history" class="sh_javascript"></pre>
+    </div>
+  </body>
+</html>
